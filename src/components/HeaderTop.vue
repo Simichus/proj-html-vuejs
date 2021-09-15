@@ -22,11 +22,11 @@ export default {
 @import '@/scss/_vars.scss';
 
 .header-top{
-    background-color: $bg-gray;
-    color: $light-gray;
+    background-color: $main-color;
+    color: $gumbo;
 
     h3{
-        font-size: 10px;
+        font-size: 12px;
         margin: 0;
     }
 }
