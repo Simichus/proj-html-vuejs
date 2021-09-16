@@ -14,13 +14,16 @@ export default {
 
 a{
     color: $white;
-    padding: 7px 15px;
+    padding: 6px 13px;
     background-color: $secondary-color;
     border-radius: 40px;
     transition: background-color .25s;
+    border: 2px solid transparent;
 
     &:hover{
-        background-color: $secondary-color-hover;
+        background-color: $white;
+        border: 2px solid $secondary-color;
+        color: $secondary-color;
     }
 }
 </style>
