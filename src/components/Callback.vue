@@ -51,7 +51,7 @@ form{
         margin: 1rem 0;
         padding-left: 0.5rem;
         background-color: $light-gray;
-        border-radius: 5px;
+        border-radius: 15px;
         border-color: rgba($color: $main-color, $alpha: 0.4)
     }
 }

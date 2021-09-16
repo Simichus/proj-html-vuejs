@@ -20,6 +20,8 @@
           </div>
       </div>
       <Courses/>
+      <img src="../assets/svg/driving-triangle.svg" alt="" class="driving-triangle">
+      <Rates/>
   </main>
 </template>
 
@@ -27,12 +29,14 @@
 import GetBehindTheWheel from "@/components/GetBehindTheWheel.vue";
 import Callback from "@/components/Callback.vue";
 import Courses from "@/components/Courses.vue";
+import Rates from "@/components/Rates.vue";
 export default {
 name: 'Main',
 components:{
     GetBehindTheWheel,
     Callback,
-    Courses
+    Courses,
+    Rates
 }
 }
 </script>
@@ -44,5 +48,11 @@ components:{
     background-image: url('../assets/img/horizontal-cta-background.jpg');
     background-size: cover;
     color: $white;
+}
+
+.driving-triangle{
+    width: 100%;
+    height: 100px;
+    opacity: 0.8;
 }
 </style>
