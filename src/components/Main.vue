@@ -22,6 +22,8 @@
       <Courses/>
       <img src="../assets/svg/driving-triangle.svg" alt="" class="driving-triangle">
       <Rates/>
+      <Istructors/>
+      <Testimonials :testimonials="testimonials"/>
   </main>
 </template>
 
@@ -30,13 +32,53 @@ import GetBehindTheWheel from "@/components/GetBehindTheWheel.vue";
 import Callback from "@/components/Callback.vue";
 import Courses from "@/components/Courses.vue";
 import Rates from "@/components/Rates.vue";
+import Istructors from "@/components/Istructors.vue";
+import Testimonials from "@/components/Testimonials.vue";
 export default {
 name: 'Main',
 components:{
     GetBehindTheWheel,
     Callback,
     Courses,
-    Rates
+    Rates,
+    Istructors,
+    Testimonials
+},
+data(){
+    return{
+                testimonials:[
+            {
+                id:1,
+                name: 'Sophia Jones',
+                text:'Avada driving school really helped build my confidence behind the wheel and with driving in general, and they got me a first time pass! Highly recommended.',
+                imgPath: require('@/assets/img/testimonial-sophia.png')
+            },
+            {
+                id:2,
+                name: 'Grant',
+                text:'Avada driving school really helped build my confidence behind the wheel and with driving in general, and they got me a first time pass! Highly recommended.',
+                imgPath: require('@/assets/img/testimonial-grant.png')
+            },
+            {
+                id:3,
+                name: 'Harold',
+                text:'Avada driving school really helped build my confidence behind the wheel and with driving in general, and they got me a first time pass! Highly recommended.',
+                imgPath: require('@/assets/img/testimonial-harold.png')
+            },
+            {
+                id:4,
+                name: 'Kate',
+                text:'Avada driving school really helped build my confidence behind the wheel and with driving in general, and they got me a first time pass! Highly recommended.',
+                imgPath: require('@/assets/img/testimonial-kate.png')
+            },
+            {
+                id:5,
+                name: 'Kelly',
+                text:'Avada driving school really helped build my confidence behind the wheel and with driving in general, and they got me a first time pass! Highly recommended.',
+                imgPath: require('@/assets/img/testimonial-kelly.png')
+            },
+        ]
+    }
 }
 }
 </script>

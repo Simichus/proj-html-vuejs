@@ -41,6 +41,6 @@ data(){
 <style lang="scss" scoped>
 .rates{
     position: relative;
-    top: -100px;
+    top: -110px;
 }
 </style>

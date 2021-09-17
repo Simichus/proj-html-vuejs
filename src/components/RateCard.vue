@@ -86,24 +86,6 @@ $label-font-size-redo: $default-size * 4;
 }
 
 // -- selectors
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  background: #ecf0f1;
-  color: #444;
-  font-family: 'Lato', Tahoma, Geneva, sans-serif;
-  font-size: 16px;
-  padding: 10px;
-}
-
-.set-size {
-  font-size: 10em;
-}
 
 .charts-container {
   &:after {
@@ -132,7 +114,7 @@ body {
 
     .half-circle {
       @include size(100%, 100%);
-      border: ($default-size / 10) solid #3498db;
+      border: ($default-size / 10) solid $main-color;
       border-radius: 50%;
       clip: rect(0, $default-size / 2, $default-size, 0);
       left: 0;
@@ -155,24 +137,18 @@ body {
     position: absolute;
     text-align: center;
 
-    .smaller {
-      color: $main-color;
-      font-size: .45em;
-      padding-bottom: 20px;
-      vertical-align: super;
-    }
   }
 
   .shadow {
     @include size(100%, 100%);
-    border: $default-size / 10 solid #bdc3c7;
+    border: $default-size / 10 solid $light-gray;
     border-radius: 50%;
   }
 
   &.style {
     .label {
       background: none;
-      color: #7f8c8d;
+      color: $main-color;
 
     }
   }
