@@ -24,6 +24,8 @@
       <Rates/>
       <Istructors/>
       <Testimonials :testimonials="testimonials"/>
+      <LatestNews/>
+      <NewsLetter/>
   </main>
 </template>
 
@@ -34,6 +36,8 @@ import Courses from "@/components/Courses.vue";
 import Rates from "@/components/Rates.vue";
 import Istructors from "@/components/Istructors.vue";
 import Testimonials from "@/components/Testimonials.vue";
+import LatestNews from "@/components/LatestNews.vue";
+import NewsLetter from "@/components/NewsLetter.vue";
 export default {
 name: 'Main',
 components:{
@@ -42,7 +46,9 @@ components:{
     Courses,
     Rates,
     Istructors,
-    Testimonials
+    Testimonials,
+    LatestNews,
+    NewsLetter
 },
 data(){
     return{

@@ -1,18 +1,19 @@
 <template>
-  <a href="#" class="fs-5">{{text}}</a>
+  <a :style="`width:${width};`" href="#" class="fs-5">{{text}}</a>
 </template>
 
 <script>
 export default {
     name:'Button',
-    props:['text']
+    props:['text', 'width']
 }
 </script>
 
 <style lang="scss" scoped>
 @import '@/scss/_vars.scss';
 
-a{
+a{  
+    display: inline-block;
     color: $white;
     padding: 6px 13px;
     background-color: $secondary-color;
